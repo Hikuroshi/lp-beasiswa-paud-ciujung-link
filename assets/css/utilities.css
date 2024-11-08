@@ -1,0 +1,46 @@
+body {
+  background-color: brown;
+  color: white;
+}
+
+.badge-long {
+  color: brown;
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+.border-brown {
+  border-color: brown !important;
+  color: brown !important;
+  outline-color: brown !important;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in {
+  opacity: 0.5;
+  transform: translateX(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hover-shadow {
+  transition: transform 0.3s;
+}
+.hover-shadow:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
